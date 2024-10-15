@@ -12,6 +12,7 @@ Using various models, including custom CNNs, MobileNetV2, and EfficientNetB2, th
 - [Methodology](#methodology)
 - [Challenges Faced](#challenges-faced)
 - [Results](#results)
+- [Further Improvements](#further-improvements)
 - [Conclusion](#conclusion)
 
 ## Introduction
@@ -72,7 +73,39 @@ The performance of the models was as follows:
 | MobileNetV2     | 42%      | Batik Betawi (0.75)     | Batik Sogan (0.89)  | Batik Sogan (0.53)    |
 | EfficientNetB2  | 69%      | Batik Betawi (1.00)     | Batik Bali (0.62)   | Batik Betawi (0.80)   |
 
+## Further Improvements for Batik Classification Project
+
+1. **Addressing Class Imbalance**:
+   - Use SMOTE to generate synthetic data for under-represented classes like Batik Sogan.
+   - Adjust class weights to prioritize minority classes and balance the dataset.
+
+2. **Data Augmentation and Preprocessing**:
+   - Apply advanced augmentation techniques such as elastic transformations and cutout augmentation to enrich the dataset.
+   - Implement super-resolution techniques to improve low-quality images, enhancing the model's learning capability.
+
+3. **Model Generalization and Overfitting**:
+   - Use L2 regularization and k-fold cross-validation to prevent overfitting and improve model generalization.
+   - Combine models via ensemble techniques like stacking for more robust classification results.
+
+4. **Hyperparameter Tuning**:
+   - Perform grid search or Bayesian optimization to fine-tune parameters like learning rate, batch size, and dropout rates.
+   - Implement learning rate schedulers to dynamically adjust the learning rate during training.
+
+5. **Transfer Learning Enhancement**:
+   - Fine-tune deeper layers of pre-trained models (MobileNetV2, EfficientNetB2) to extract more relevant features.
+   - Explore transfer learning from models trained on fashion or textile-specific datasets to better align with the batik domain.
+
+6. **Model Complexity and Customization**:
+   - Develop deeper, more customized CNN architectures for texture recognition, tailored to batik motifs.
+   - Integrate attention mechanisms to focus on key parts of batik patterns for improved classification.
+
+7. **Leveraging External Datasets**:
+   - Expand the dataset by incorporating more batik motifs from additional sources to increase training data.
+   - Enhance data annotations to provide more metadata, improving the richness and depth of the training set.
+
+8. **Evaluation and Interpretation**:
+   - Use Grad-CAM to visualize the model's focus during classification and better understand misclassifications.
+   - Focus on precision-recall metrics to get a clearer sense of performance, especially for under-represented classes.
+
 ## Conclusion
 EfficientNetB2 was the most effective model, achieving the highest accuracy and generalizing well across different batik patterns. However, there is still room for improvement, especially in recognizing lesser-known patterns like Batik Sogan.
-
-Future improvements could include collecting more data, performing further augmentation, and refining model hyperparameters.
