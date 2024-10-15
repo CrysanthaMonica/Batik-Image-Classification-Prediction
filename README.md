@@ -13,7 +13,6 @@ Using various models, including custom CNNs, MobileNetV2, and EfficientNetB2, th
 - [Challenges Faced](#challenges-faced)
 - [Results](#results)
 - [Conclusion](#conclusion)
-- [How to Run](#how-to-run)
 
 ## Introduction
 Batik patterns are intricate and diverse, requiring expertise to recognize manually. With advancements in technology, we explore how deep learning can assist in the automatic classification of batik patterns. This project aims to classify several batik motifs, including Batik Kawung, Parang, and Mega Mendung, among others.
@@ -77,9 +76,3 @@ The performance of the models was as follows:
 EfficientNetB2 was the most effective model, achieving the highest accuracy and generalizing well across different batik patterns. However, there is still room for improvement, especially in recognizing lesser-known patterns like Batik Sogan.
 
 Future improvements could include collecting more data, performing further augmentation, and refining model hyperparameters.
-
-## How to Run
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/batik-classification.git
-   cd batik-classification
