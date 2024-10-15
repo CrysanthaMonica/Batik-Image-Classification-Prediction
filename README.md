@@ -73,7 +73,7 @@ The performance of the models was as follows:
 | MobileNetV2     | 42%      | Batik Betawi (0.75)     | Batik Sogan (0.89)  | Batik Sogan (0.53)    |
 | EfficientNetB2  | 69%      | Batik Betawi (1.00)     | Batik Bali (0.62)   | Batik Betawi (0.80)   |
 
-## Further Improvements for Batik Classification Project
+## Further Improvements
 
 1. **Addressing Class Imbalance**:
    - Use SMOTE to generate synthetic data for under-represented classes like Batik Sogan.
